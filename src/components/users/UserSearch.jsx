@@ -21,7 +21,7 @@ function UserSearch() {
             <input type="text" name="search-input" id="search-input" placeholder='Enter username' onChange={handleTextChange} value={text}/>
             <button type="submit" className='search-btn' onClick={handleSubmit}>Search</button>
         </div>
-        {/* {users.length !== 0 && <button type="submit" className='clear-btn' onClick={clearUsers}>Clear</button>} */}
+        {users.length !== 0 && <button type="submit" className='clear-btn' onClick={clearUsers}>Clear</button>}
         <UserList />
     </div>
   )
