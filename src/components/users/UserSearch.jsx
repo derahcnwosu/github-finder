@@ -6,6 +6,8 @@ function UserSearch() {
     const {fetchUsers, users, clearUsers} = useContext(gitHubContext)
     const [text, setText] = useState('')
 
+
+
     const handleTextChange = (e) =>{
         setText(e.target.value)
     }

@@ -19,7 +19,11 @@ export const GitHubProvider = ({children}) => {
 
 
 
+  
+
+
     const fetchUsers = async(text) => {
+
         dispatch({
             type: 'SET_LOADING_TRUE',
             payload: true
@@ -39,6 +43,7 @@ export const GitHubProvider = ({children}) => {
             type: 'SET_LOADING_FALSE',
             payload: false
         })
+        console.log(items)
     }
 
     const getUser = async(login) => {
@@ -97,6 +102,7 @@ export const GitHubProvider = ({children}) => {
             users: state.users,
             loading: state.loading,
             user: state.user,
+            all: state.all,
             repos: state.repos,
             fetchUsers,
             getUser,
